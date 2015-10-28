@@ -114,7 +114,7 @@ Pod::Spec.new do |s|
     ss.ios.deployment_target = '8.0'
     ss.osx.deployment_target = '10.9'
 
-    ss.dependency 'PromiseKit/CorePromise', '> 2'  # Swift 2.0 support comes after PromiseKit 3.0
+    ss.dependency 'PromiseKit/CorePromise', '> 3'  # Swift 2.0 support comes after PromiseKit 3.0
     ss.source_files = 'sources/PromiseKit/PromiseKit+Overcoat.h'
     ss.pod_target_xcconfig = ss.user_target_xcconfig = {
       'GCC_PREPROCESSOR_DEFINITIONS' => 'OVERCOAT_SUPPORT_PROMISE_KIT=1',  # Used for shortcuts in umbrella header
